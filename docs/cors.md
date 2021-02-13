@@ -37,3 +37,5 @@
 {"error": "No Minecraft texture exists under the identifier :identifier."}
 ```
 - Status code: `200` on success, `404` on error.
+
+Copyright [88](https://github.com/88) 2021, all rights reserved.
