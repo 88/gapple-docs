@@ -34,8 +34,7 @@ Here are the different responses that can be returned:
 ```
 
 **Fatal Worker Error / HTTP `500`:**
-```
+
 Body too long to include.
-```
 
 Copyright [88](https://github.com/88) 2021, all rights reserved.
