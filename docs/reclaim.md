@@ -46,7 +46,7 @@ Body too long to include.
 {"error":"Mojang API gave us a bad response on the 1st stage. Try again later!"}
 ```
 
-** Bad Mojang Response: Second Stage / HTTP `502`:**
+**Bad Mojang Response: Second Stage / HTTP `502`:**
 ```json
 {"error":"Mojang API gave us a bad response on the 2nd stage. Try again later!"}
 ```
