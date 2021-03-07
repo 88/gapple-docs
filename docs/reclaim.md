@@ -3,12 +3,12 @@ Minecraft accounts have a 30-day name change cooldown, meaning they cannot chang
 
 This API's purpose is to estimate if a dropping Minecraft username is a "reclaim". These docs will guide users through how to use this API and what responses can possibly be returned.
 
-### `GET /reclaim/:current_name/:name_to_check`
+### `GET /reclaim/:name_to_check?account=:current_name`
 This is the only endpoint for this API.
 
 Parameters are as follows:
-- **`current_name`** - the current username of the account
 - **`name_to_check`** - the username you want to check for reclaims
+- **`current_name`** - the current username of the account
 
 ### Possible responses
 
@@ -30,6 +30,11 @@ Here are the different responses that can be returned:
 **Low Chance of Reclaim / HTTP `200`:**
 ```json
 {"reclaim_probability":"low"}
+```
+
+**Impossible Chance of Reclaim / HTTP `200`:**
+```json
+{"reclaim_probability":"impossible"}
 ```
 
 **User Does Not Exist / HTTP `404`:**
