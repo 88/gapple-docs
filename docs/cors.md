@@ -5,6 +5,9 @@
 ### `GET /cors/username/:username`
 - What is returned: Raw response from `api.mojang.com/users/profiles/minecraft/`, including any status codes or error messages. The only thing added is the `Access-Control-Allow-Origin` header.
 
+### `GET /cors/names/:uuid`
+- What is returned: Raw response from `api.mojang.com/user/profiles/:uuid/names`, including any status codes or error messages. The only thing added is the `Access-Control-Allow-Origin` header.
+
 ### `GET /cors/optifine/:username`
 - What is returned: An `image/png` object of the user's OptiFine cape
 - On error: An `application/json` response similar to this:
