@@ -33,6 +33,11 @@ Here are the different responses that can be returned:
 {"status":"blocked"}
 ```
 
+**Username Invalid / HTTP `200`:**
+```json
+{"status":"invalid"}
+```
+
 **Fatal Worker Error / HTTP `500`:**
 
 Body too long to include.
