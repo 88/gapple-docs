@@ -1,0 +1,46 @@
+# Account Status API Routes
+
+This is currently the most accurate Minecraft account status API. These docs aim to serve as a guide on how to use this API and what responses can possibly be returned.
+
+### `GET /status/:username`
+
+This is currently the only endpoint for this API.
+
+### Possible responses
+
+The API will almost always return HTTP status code `200 OK`. If there is an error connecting to Mojang, the API will return HTTP status code `503 Service Unavailable`, and if the specified user does not exist, the API will return HTTP status code `404 Not Found`. For any of these possible responses, the API will set its `Content-Type` header to `application/json`.
+
+If there is a fatal error with the Worker, the API will return an HTTP status code in the `5xx` range, most probably `500`, and set its `Content-Type` header to `text/html`. The response will contain the string `Worker threw exception` in the HTML.
+
+Here are the different responses that can be returned:
+
+**Status Found / HTTP `200`:**
+
+```json
+// Microsoft Account (MSA)
+{"username":"Gr8_Escape", "uuid":"6d752bb0ef41432a825a4d44185de121", "status":"msa"}
+
+// Mojang Account
+{"username":"D__G", "uuid":"c7b3d49c580c4af2a824ca07b37ff2f9", "status":"mojang"}
+
+// Unmigrated Account (Legacy)
+{"username":"Tremendous", "uuid":"7d96137e15a24f09b79f2366199d822e", "status":"legacy"}
+```
+
+**User Not Found / HTTP `404`**:
+
+```json
+{"status":"nonexistent"}
+```
+
+**Fatal Worker Error / HTTP `500`:**
+
+Body too long to include.
+
+**Mojang Connection Error / HTTP `503`**:
+
+```json
+{"error":"There was an issue communicating with Mojang or the provided name was invalid. Try again later!"}
+```
+
+Copyright [88](https://github.com/88) 2021, all rights reserved.
