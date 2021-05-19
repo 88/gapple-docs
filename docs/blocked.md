@@ -5,6 +5,8 @@ This is currently the most accurate blocked username checker API. These docs aim
 
 This is currently the only endpoint for this API.
 
+You can send UUIDs to the endpoint as well, however it will only respond with the "Username Taken" response if the UUID is assigned to a profile. Otherwise it will error out with the "UUID Supplied Instead of Username" response.
+
 ### Possible responses
 
 The API will almost always return HTTP status code `200 OK` and set its `Content-Type` header to `application/json`.
@@ -38,8 +40,18 @@ Here are the different responses that can be returned:
 {"status":"invalid"}
 ```
 
+**UUID Supplied Instead of Username / HTTP `400`:**
+```json
+{"error":"uuid_supplied_use_username"}
+```
+
 **Fatal Worker Error / HTTP `500`:**
 
 Body too long to include.
+
+**Mojang Connection Error / HTTP `502`:**
+```json
+{"error":"Mojang connection error. Please try again later!"}
+```
 
 Copyright [88](https://github.com/88) 2021, all rights reserved.
