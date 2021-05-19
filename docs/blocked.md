@@ -45,13 +45,23 @@ Here are the different responses that can be returned:
 {"error":"uuid_supplied_use_username"}
 ```
 
+**NameMC Ratelimit / HTTP `429`:**
+```json
+{"error":"NameMC appears to be ratelimited. Please try again later!"}
+```
+
 **Fatal Worker Error / HTTP `500`:**
 
-Body too long to include.
+Body too long to include. Should include the string "Ray ID".
 
 **Mojang Connection Error / HTTP `502`:**
 ```json
 {"error":"Mojang connection error. Please try again later!"}
+```
+
+**NameMC Connection Error / HTTP `502`:**
+```json
+{"error":"NameMC connection error. Please try again later!"}
 ```
 
 Copyright [88](https://github.com/88) 2021, all rights reserved.
