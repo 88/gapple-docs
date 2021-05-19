@@ -37,7 +37,7 @@ Here are the different responses that can be returned:
 
 Body too long to include. Should include the string "Ray ID".
 
-**Mojang Connection Error / HTTP `503`**:
+**Mojang Connection Error / HTTP `502`**:
 
 ```json
 {"error":"There was an issue communicating with Mojang or the provided name was invalid. Try again later!"}
