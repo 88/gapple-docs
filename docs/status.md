@@ -8,7 +8,7 @@ This is currently the only endpoint for this API.
 
 ### Possible responses
 
-The API will almost always return HTTP status code `200 OK`. If there is an error connecting to Mojang, the API will return HTTP status code `503 Service Unavailable`, and if the specified user does not exist, the API will return HTTP status code `404 Not Found`. For any of these possible responses, the API will set its `Content-Type` header to `application/json`.
+The API will almost always return HTTP status code `200 OK`. If there is an error connecting to Mojang, the API will return HTTP status code `502 Bad Gateway`, and if the specified user does not exist, the API will return HTTP status code `404 Not Found`. For any of these possible responses, the API will set its `Content-Type` header to `application/json`.
 
 If there is a fatal error with the Worker, the API will return an HTTP status code in the `5xx` range, most probably `500`, and set its `Content-Type` header to `text/html`. The response will contain the string `Worker threw exception` in the HTML.
 
