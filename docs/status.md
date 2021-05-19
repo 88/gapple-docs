@@ -35,7 +35,7 @@ Here are the different responses that can be returned:
 
 **Fatal Worker Error / HTTP `500`:**
 
-Body too long to include.
+Body too long to include. Should include the string "Ray ID".
 
 **Mojang Connection Error / HTTP `503`**:
 
