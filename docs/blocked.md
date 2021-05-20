@@ -40,11 +40,6 @@ Here are the different responses that can be returned:
 {"status":"invalid"}
 ```
 
-**UUID Supplied Instead of Username / HTTP `400`:**
-```json
-{"error":"uuid_supplied_use_username"}
-```
-
 **NameMC Ratelimit / HTTP `429`:**
 ```json
 {"error":"NameMC appears to be ratelimited. Please try again later!"}
