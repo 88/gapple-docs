@@ -17,8 +17,14 @@ Here are the different responses that can be returned:
 **Status Found / HTTP `200`:**
 
 ```json
-// Microsoft Account (MSA)
-{"username":"Gr8_Escape", "uuid":"6d752bb0ef41432a825a4d44185de121", "status":"msa"}
+// New Microsoft Account (MSA)
+{"username":"mypasswordis0000","uuid":"8ce07be3e365441aaa4301893041c64e","status":"new_msa"}
+
+// Migrated Microsoft Account (MSA)
+{"username":"Gr8_Escape", "uuid":"6d752bb0ef41432a825a4d44185de121", "status":"migrated_msa"}
+
+// Can't tell what type of MSA it is
+{"username":"testuser","uuid":"9abd218f2b374bfa96d904eb074afdb7","status":"msa"}
 
 // Mojang Account
 {"username":"D__G", "uuid":"c7b3d49c580c4af2a824ca07b37ff2f9", "status":"mojang"}
