@@ -30,7 +30,7 @@ Here are the different responses that can be returned:
 
 **UUID is PHD / HTTP `200`:**
 ```json
-{"username":"500Benz","uuid":"f233b78548164578a9e296a06aee0878","name_history":[{"name":"50ForAGram"},{"name":"GangAssault","changedToAt":1614055827015},{"name":"500Benz","changedToAt":1616696374839}],"phd":true}
+{"username":"xxemilyy","uuid":"2b4c7e72328d4616b27c070bcfb257ea","name_history":[{"name":"____Luke_____"},{"name":"xxemilyy","changedToAt":1616205193165}],"phd":true}
 ```
 
 **Invalid UUID / HTTP `400`:**
