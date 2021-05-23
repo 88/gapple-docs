@@ -45,7 +45,7 @@ Here are the different responses that can be returned:
 
 **UUID Nonexistent or Belongs to Hard-Deleted Profile / HTTP `404`:**
 ```json
-{"error":"UUID never existed or belongs to a hard-deleted profile."}
+{"error":"This UUID never existed or belongs to a hard-deleted profile."}
 ```
 
 **Ratelimited / HTTP `429`:**
