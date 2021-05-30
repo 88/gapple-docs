@@ -8,7 +8,3 @@
 - Pseudo hard-deleted user API ([documentation](./phd/))
 
 Copyright [88](https://github.com/88) 2021, all rights reserved.
-
-<!-- Removed endpoints:
-- Minecraft account creation date API ([documentation](./creation/))
-!-->
