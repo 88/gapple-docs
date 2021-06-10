@@ -2,6 +2,8 @@
 
 This is currently the most accurate Minecraft account status API. These docs aim to serve as a guide on how to use this API and what responses can possibly be returned.
 
+**NOTE:** There may be a few extra JSON key/value pairs returned in these responses for debug purposes. Do not check the exact page content for responses! Please decode the JSON and check the individual `status` key or `error` key.
+
 ### `GET /status/:username`
 
 This is currently the only endpoint for this API.
