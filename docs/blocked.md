@@ -1,5 +1,7 @@
 # Block Checker + Drop Time API Routes
-This is currently the most accurate blocked username checker API. These docs aim to serve as a guide on how to use this API and what responses can possibly be returned.
+This API's purpose is to check if Minecraft usernames are blocked, taken, available, or dropping soon. These docs aim to serve as a guide on how to use this API and what responses can possibly be returned.
+
+**NOTE:** There may be a few extra JSON key/value pairs returned in these responses for debug purposes. Do not check the exact page content for responses! Please decode the JSON and check the individual `status` key or `error` key.
   
 ### `GET /blocked/:username`
 
@@ -45,9 +47,9 @@ Here are the different responses that can be returned:
 {"error":"uuid_supplied_use_username"}
 ```
 
-**NameMC Ratelimit / HTTP `429`:**
+**Droptime Fetch Ratelimit / HTTP `429`:**
 ```json
-{"error":"NameMC appears to be ratelimited. Please try again later!"}
+{"error":"Ratelimit while checking if the name is dropping. Please try again later!"}
 ```
 
 **Fatal Worker Error / HTTP `500`:**
@@ -59,9 +61,9 @@ Body too long to include. Should include the string "Ray ID".
 {"error":"Mojang connection error. Please try again later!"}
 ```
 
-**NameMC Connection Error / HTTP `502`:**
+**Username Blocked OR Dropping / HTTP `502`:**
 ```json
-{"error":"NameMC connection error. Please try again later!"}
+{"status":"blocked_or_dropping","error":"Error while checking if the name is dropping. Please try again later!"}
 ```
 
 Copyright [88](https://github.com/88) 2021, all rights reserved.
