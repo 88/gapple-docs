@@ -42,6 +42,11 @@ Here are the different responses that can be returned:
 {"status":"invalid"}
 ```
 
+**Username Blocked OR Dropping / HTTP `200`:**
+```json
+{"status":"blocked_or_dropping","error":"Error while checking if the name is dropping. Please try again later!"}
+```
+
 **UUID Supplied Instead of Username / HTTP `400`:**
 ```json
 {"error":"uuid_supplied_use_username"}
@@ -49,7 +54,7 @@ Here are the different responses that can be returned:
 
 **Droptime Fetch Ratelimit / HTTP `429`:**
 ```json
-{"error":"Ratelimit while checking if the name is dropping. Please try again later!"}
+{"status":"blocked_or_dropping","error":"Ratelimit while checking if the name is dropping. Please try again later!"}
 ```
 
 **Fatal Worker Error / HTTP `500`:**
@@ -59,11 +64,6 @@ Body too long to include. Should include the string "Ray ID".
 **Mojang Connection Error / HTTP `502`:**
 ```json
 {"error":"Mojang connection error. Please try again later!"}
-```
-
-**Username Blocked OR Dropping / HTTP `502`:**
-```json
-{"status":"blocked_or_dropping","error":"Error while checking if the name is dropping. Please try again later!"}
 ```
 
 Copyright [88](https://github.com/88) 2021, all rights reserved.
