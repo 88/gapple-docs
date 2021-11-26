@@ -26,8 +26,11 @@ Here are the different responses that can be returned:
 // New Microsoft Account (MSA)
 {"username":"FunClock1564643","uuid":"aae41b6ff5ce48ba9598f55ed2c81fa3","status":"new_msa"}
 
-// Migrated Microsoft Account (MSA)
+// Migrated Microsoft Account (MSA), migrated from a Mojang account
 {"username":"D__G","uuid":"c7b3d49c580c4af2a824ca07b37ff2f9","status":"migrated_msa"}
+
+// Migrated Microsoft Account (MSA), migrated from a Legacy account
+{"username":"SeeSaw","uuid":"78abd133b85b4a91a3141e937eb23055","status":"migrated_msa_from_legacy"}
 
 // Can't tell what type of MSA it is
 {"username":"RyanToysReview","uuid":"416e3d9f71db49ec8c787e8eec740506","status":"msa"}
