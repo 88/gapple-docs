@@ -44,4 +44,4 @@
 ```
 - Status code: `200` on success, `404` on error.
 
-Copyright [88](https://github.com/88) 2021, all rights reserved.
+Copyright [88](https://github.com/88) 2022, all rights reserved.
