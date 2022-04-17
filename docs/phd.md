@@ -63,4 +63,4 @@ Body too long to include. Should include the string "Ray ID".
 {"error":"There was an issue communicating with Mojang. Try again later!"}
 ```
 
-Copyright [88](https://github.com/88) 2021, all rights reserved.
+Copyright [88](https://github.com/88) 2022, all rights reserved.
