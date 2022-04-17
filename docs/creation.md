@@ -89,4 +89,4 @@ You're able to find the creation date of accounts that:
 - prename migrated accounts
     - example: `aaa`, `tanpug`, `MCBYT`
 
-Copyright [88](https://github.com/88) 2020, all rights reserved.
+Copyright [88](https://github.com/88) 2022, all rights reserved.
