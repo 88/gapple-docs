@@ -56,4 +56,4 @@ Body too long to include. Should include the string "Ray ID".
 {"error":"Mojang API gave us a bad response on the 2nd stage. Try again later!"}
 ```
 
-Copyright [88](https://github.com/88) 2021, all rights reserved.
+Copyright [88](https://github.com/88) 2022, all rights reserved.
